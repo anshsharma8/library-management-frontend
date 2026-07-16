@@ -20,7 +20,7 @@ const Register = () => {
   const navigate = useNavigate()
 
   const handleChange = (e) => {
-    console.log(e);
+    
     
     setForm({ ...form, [e.target.name]: e.target.value })
   }
@@ -49,7 +49,7 @@ const Register = () => {
           phoneNumber: Number(form.phoneNumber),
           email: form.email,
           password: form.password,
-          role: 'USER',
+          role: 'ROLE_USER',
         },
         addressId
       )

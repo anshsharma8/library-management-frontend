@@ -12,3 +12,4 @@ export const registerUser=(userData,addressId)=>{
 export const createAddress=(addressData)=>{
     return apiClient.post('/address',addressData);
 };
+

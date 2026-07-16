@@ -35,27 +35,35 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor='email'>Email :</label>
-          <input 
+          <input
             id='email'
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-          /><br/>
+          /><br />
         </div>
         <div>
           <label htmlFor='password'>Password :</label>
-          <input 
+          <input
             id='password'
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-          /><br/>
+          /><br />
         </div>
         {error && <p style={{ color: 'red' }}>{error}</p>}
         <button type="submit" disabled={loading}>
           {loading ? 'Logging in...' : 'Login'}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            window.location.href = 'http://localhost:8081/oauth2/authorization/google'
+          }}
+        >
+          Login with Google
         </button>
       </form>
       <p>Don't have an account? <Link to="/register">Register</Link></p>
