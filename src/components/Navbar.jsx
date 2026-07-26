@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav style={{ display: 'flex', gap: '16px', padding: '12px', borderBottom: '1px solid #ccc' }}>
       <Link to="/books">Books</Link>
       <Link to="/libraries">Libraries</Link>
-      
+      <Link to="/profile" className="hover:text-brass transition-colors">Profile</Link>
       {user.role === 'ROLE_ADMIN' && <Link to="/users">Users</Link>}
       <span style={{ marginLeft: 'auto' }}>
         {user.sub} ({user.role}) — <button onClick={handleLogout}>Logout</button>

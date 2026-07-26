@@ -7,7 +7,8 @@ import Users from './pages/Users';
 import ProtectedRoute from './routes/ProtectedRoute';
 import Navbar from './components/Navbar';
 import OAuthRedirect from './pages/OAuthRedirect';
-
+import Profile from './pages/Profile';
+import NotFound from './pages/NotFound';
 const App = () => {
   return (
     <>
@@ -15,6 +16,10 @@ const App = () => {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
+        <Route path="/profile" element={
+        <ProtectedRoute><Profile /></ProtectedRoute>
+        } />
 
         <Route path="/books" element={
           <ProtectedRoute><Books /></ProtectedRoute>
@@ -31,6 +36,11 @@ const App = () => {
         <Route path="/" element={<Navigate to="/login" replace />} />
 
         <Route path="/oauth2/redirect" element={<OAuthRedirect />} />
+
+        <Route path="*" element={<NotFound />} />
+        
+
+     
       </Routes>
     </>
   );

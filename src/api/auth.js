@@ -13,3 +13,6 @@ export const createAddress=(addressData)=>{
     return apiClient.post('/address',addressData);
 };
 
+export const updateAddressPartial = (addressId, addressData) => {
+  return apiClient.patch(`/address/${addressId}`, addressData)
+}

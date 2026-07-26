@@ -143,13 +143,13 @@ const Books = () => {
             value={newBook.title}
             onChange={(e) => setNewBook({ ...newBook, title: e.target.value })}
             required
-          />
+          /><br/>
           <input
             placeholder="Author"
             value={newBook.author}
             onChange={(e) => setNewBook({ ...newBook, author: e.target.value })}
             required
-          />
+          /><br/>
           <button type="submit">Add Book</button>
         </form>
       )}

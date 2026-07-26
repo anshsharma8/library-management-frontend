@@ -139,21 +139,21 @@ const Libraries = () => {
         <form onSubmit={handleCreateLibrary}>
           <h3>New Library</h3>
           <input placeholder="Library Name" value={newLibrary.libraryName}
-            onChange={(e) => setNewLibrary({ ...newLibrary, libraryName: e.target.value })} required />
+            onChange={(e) => setNewLibrary({ ...newLibrary, libraryName: e.target.value })} required /><br/>
           <input placeholder="Phone Number" value={newLibrary.phoneNumber}
-            onChange={(e) => setNewLibrary({ ...newLibrary, phoneNumber: e.target.value })} required />
+            onChange={(e) => setNewLibrary({ ...newLibrary, phoneNumber: e.target.value })} required /><br/>
           <input placeholder="House Number" value={newLibrary.houseNumber}
-            onChange={(e) => setNewLibrary({ ...newLibrary, houseNumber: e.target.value })} required />
+            onChange={(e) => setNewLibrary({ ...newLibrary, houseNumber: e.target.value })} required /><br/>
           <input placeholder="Area" value={newLibrary.area}
-            onChange={(e) => setNewLibrary({ ...newLibrary, area: e.target.value })} required />
+            onChange={(e) => setNewLibrary({ ...newLibrary, area: e.target.value })} required /><br/>
           <input placeholder="City" value={newLibrary.city}
-            onChange={(e) => setNewLibrary({ ...newLibrary, city: e.target.value })} required />
+            onChange={(e) => setNewLibrary({ ...newLibrary, city: e.target.value })} required /><br/>
           <input placeholder="State" value={newLibrary.state}
-            onChange={(e) => setNewLibrary({ ...newLibrary, state: e.target.value })} required />
+            onChange={(e) => setNewLibrary({ ...newLibrary, state: e.target.value })} required /><br/>
           <input placeholder="Country" value={newLibrary.country}
-            onChange={(e) => setNewLibrary({ ...newLibrary, country: e.target.value })} required />
+            onChange={(e) => setNewLibrary({ ...newLibrary, country: e.target.value })} required /><br/>
           <input placeholder="Pincode" value={newLibrary.pincode}
-            onChange={(e) => setNewLibrary({ ...newLibrary, pincode: e.target.value })} required />
+            onChange={(e) => setNewLibrary({ ...newLibrary, pincode: e.target.value })} required /><br/>
           <button type="submit">Create Library</button>
         </form>
       )}
