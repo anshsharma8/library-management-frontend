@@ -60,7 +60,7 @@ const Login = () => {
         <button
           type="button"
           onClick={() => {
-            window.location.href = 'http://localhost:8081/oauth2/authorization/google'
+           window.location.href = `${import.meta.env.VITE_API_BASE_URL}/oauth2/authorization/google`
           }}
         >
           Login with Google
